@@ -23,7 +23,4 @@ yarn-debug.log*
 yarn-error.log*
 
 # electron-builder artifacts
-/dist/win-unpacked
-/dist/linux-unpacked
-/dist/builder-debug.yml
-/dist/builder-effective-config.yaml
+/dist

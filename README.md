@@ -2,7 +2,7 @@
 The *GenBenchDroid-Editor* can be used to create or modify templates and modules for the benchmark case generation tool [GenBenchDroid](https://github.com/stschott/genbenchdroid).
 
 ## Usage
-You can obtain the packaged executable of the GenBenchDroid-Editor for your system [here](https://github.com/stschott/genbenchdroid-editor/tree/main/dist).
+You can obtain the packaged executable of the GenBenchDroid-Editor for your system [here](https://github.com/stschott/genbenchdroid-editor/releases).
 
 ### Build yourself
 If you want to build the application yourself, you need to have [Node.js](https://nodejs.org/) installed.
