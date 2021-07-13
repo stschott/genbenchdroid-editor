@@ -1,0 +1,75 @@
+{
+  "name": "genbenchdroid-editor",
+  "description": "A tool that can be used to create or modify modules and templates for GenBenchDroid",
+  "version": "1.0.0",
+  "author": "Stefan Schott",
+  "homepage": ".",
+  "license": "ISC",
+  "main": "src/main.js",
+  "dependencies": {
+    "@material-ui/core": "^4.11.2",
+    "@material-ui/icons": "^4.11.2",
+    "codemirror": "^5.62.0",
+    "react": "^17.0.1",
+    "react-beautiful-dnd": "^13.0.0",
+    "react-codemirror2": "^7.2.1",
+    "react-dom": "^17.0.1",
+    "react-scripts": "4.0.3",
+    "web-vitals": "^0.2.4"
+  },
+  "scripts": {
+    "start": "electron .",
+    "startReact": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "package": "electron-builder build --win -l"
+  },
+  "build": {
+    "extends": null,
+    "appId": "com.stschott.gbd-editor",
+    "productName": "GenBenchDroid-Editor",
+    "files": [
+      "src/main.js",
+      "build/**"
+    ],
+    "directories": {
+      "buildResources": "build"
+    },
+    "win": {
+      "icon": "build/icon.ico",
+      "target": "portable"
+    },
+    "linux": {
+      "icon": "build/icon.ico",
+      "target": "tar.gz"
+    },
+    "mac": {
+      "category": "public.app-category.developer-tools",
+      "icon": "build/icon.ico",
+      "target": "default"
+    }
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "electron": "^11.4.1",
+    "electron-builder": "^22.11.7"
+  }
+}
